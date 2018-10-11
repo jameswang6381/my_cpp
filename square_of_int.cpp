@@ -1,12 +1,10 @@
 #include <iostream>
 using namespace std;
 
-int fun2(int m) {
-	return m * m;
-}
+/*Calculate the sum of squares of two integers*/
 
-int fun1(int x, int y) {
-	return fun2(x) + fun2(y);
+int SquareSum(int x, int y) {
+	return x*x + y*y;
 }
 
 int main() {
@@ -15,9 +13,8 @@ int main() {
 	cout << "Please enter two integers (a and b):";
 	cin >> a >> b;
 	cout << "\nThe sum of square of a and b:"
-		<< fun1(a, b)
-		<< "\n" <<endl;
-	
+		<< SquareSum(a, b) << "\n" <<endl;
+
 	system("pause");
 	return 0;
 }
